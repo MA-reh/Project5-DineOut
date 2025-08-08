@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dine Out - Project-5</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link
+      rel="shortcut icon"
+      href="images/icons/hamburger-icon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fontes.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/globle.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/index.responsive.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar bg-transparent">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                Offcanvas
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExample" class="carousel slide position-relative">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="img"></div>
+            <div class="container mx-auto h-100 text-center">
+              <div class="content">
+                <h1 class="">Dine Out Restaurant</h1>
+                <p class="font-2 mt-1">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                  suscipit deserunt similique ab corporis dolores quia omnis
+                  adipisci et mollitia.
+                </p>
+                <a class="main-btn" href="#Menu"><span>Our Menu</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img"></div>
+            <div class="container mx-auto h-100 text-center">
+              <div class="row">
+                <div class="part col-md-6 pt-5">
+                  <div class="img-pizza">
+                    <img
+                      src="images/pizza.png"
+                      class="img-fluid"
+                      alt="pizza logo"
+                    />
+                  </div>
+                  <h2 class="font-3 w-75">BUY GET ONE FREE</h2>
+                  <div class="chest">
+                    <hr />
+                    <p class="fw-light">
+                      Aliquam laoreet orci quis risus vulputate tempor Quisque
+                      aliquetmattis mattis tortor nibh cursus lorem
+                    </p>
+                    <p class="phone-number font-3">+20 102 108 0042</p>
+                    <a href="#" class="main-btn"><span>About Us</span></a>
+                    <hr />
+                  </div>
+                </div>
+                <div class="part col-md-6">
+                  <img src="images/pz.png" alt="pizza" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="img"></div>
+            <div class="container mx-auto h-100 text-start">
+              <div class="row">
+                <div class="part2 offset-1 col-md-4 d-md-block d-none">
+                  <img
+                    src="images/bg.png"
+                    alt="slider3 img"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="part2 offset-1 col-md-6">
+                  <h2 class="h1 font-3">ENJOY BURGER MAKE YOUR TUMMY HAPPY</h2>
+                  <span class="line"></span>
+                  <p class="fw-light">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                    natoque penatibus et magnis dis parturient montes.
+                  </p>
+                  <div class="row w-75">
+                    <div class="col-4 slider-card">
+                      <img
+                        class="img-fluid w-50"
+                        src="images/icons/delicious-icon.png"
+                        alt="delicious-icon"
+                      />
+                      <h6>Delicious</h6>
+                    </div>
+                    <div class="col-4 slider-card">
+                      <img
+                        class="img-fluid w-50"
+                        src="images/icons/fresh-icon.png"
+                        alt="fresh-icon"
+                      />
+                      <h6>Fresh</h6>
+                    </div>
+                    <div class="col-4 slider-card">
+                      <img
+                        class="img-fluid w-50"
+                        src="images/icons/organic-icon.png"
+                        alt="organic-icon"
+                      />
+                      <h6>Organic</h6>
+                    </div>
+                  </div>
+                  <a href="#Menu" class="main-btn"><span>Our Menu</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buttons-carousel">
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <i
+              class="fa-solid fa-chevron-right carousel-control-next-icon"
+              aria-hidden="true"
+            ></i>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <i
+              class="fa-solid fa-chevron-left carousel-control-prev-icon"
+              aria-hidden="true"
+            ></i>
+            <span class="visually-hidden">Previous</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

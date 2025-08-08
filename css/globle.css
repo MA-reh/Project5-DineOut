@@ -1,0 +1,102 @@
+:root {
+    --main-color: #f1b601;
+    --bg-layer: rgba(0, 0, 0, 0.7);
+    --bg-main: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: var(--bg-main);
+    height: 5000px;
+    color: #fff;
+}
+
+/* Scroll حجم الشريط بتاع ال */
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+/* Scroll لون الخلفية بتاعت ال  */
+::-webkit-scrollbar-track {
+    background: var(--bg-main);
+}
+
+/* Scroll بتحكم في لونه وشكله  */
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 10px;
+    box-shadow: inset 4px 2px 5px rgba(255, 248, 227, 0.312);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Dancing Script", cursive;
+}
+
+.font-1 {
+    font-family: "Dancing Script", cursive;
+}
+
+.font-2 {
+    font-family: "Poppins", sans-serif;
+}
+
+.font-3 {
+    font-family: "Roboto", sans-serif;
+}
+
+.main-btn {
+    color: var(--main-color);
+    background-color: transparent;
+    border: 2px solid var(--main-color);
+    text-decoration: none;
+    padding: 8px 25px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    font-size: 16px;
+    border-radius: 25px;
+    position: relative;
+    overflow: hidden;
+    transform: scale(0);
+    opacity: 0;
+    transition-duration: 0.5s;
+}
+
+.main-btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: var(--main-color);
+    transition-duration: 1.1s;
+}
+
+.main-btn span {
+    position: relative;
+}
+
+.main-btn:hover {
+    color: #fff;
+}
+
+.main-btn:hover::before {
+    left: 0;
+}
+
+.carousel-item.active .main-btn {
+    opacity: 1;
+    transform: scale(1);
+}
