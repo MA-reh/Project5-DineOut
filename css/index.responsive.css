@@ -1,31 +1,277 @@
 @media (max-width: 1300px) {
-    /* NAV */
+    .title h4 {
+        font-size: 20px;
+
+    }
+
+    .title h2 {
+        font-size: 35px;
+    }
+
+    .title .title-img {
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .title .title-img img {
+        width: 15%;
+    }
+
+    .title .title-img::before,
+    .title .title-img::after {
+        width: 15%;
+        height: 2px;
+    }
+
+    /* Carousel 1 */
+
+    header .carousel-item .container .content h1 {
+        font-size: 40px;
+    }
+
+    header .carousel-item .container .content p {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    header .carousel-item.active:nth-of-type(1) .container .content p {
+        transform: scale(1);
+    }
+
+    .main-btn {
+        padding: 5px 15px;
+        margin: 00px auto 0;
+        font-size: 12px;
+        border-radius: 25px;
+    }
+
+    /* Carousel 2 */
+
+    header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) .img-pizza {
+        transform: scale(0.8);
+    }
+
+    header .carousel-item.active:nth-of-type(2) .container .part:nth-of-type(1) .img-pizza {
+        top: 4%;
+    }
+
+    header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) h2 {
+        font-size: 50px;
+        margin-top: 50px;
+        transform: scale(1.1);
+    }
+
+    header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) .chest p {
+        font-size: 12px;
+    }
+
+    header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) .chest>.phone-number {
+        font-size: 25px;
+    }
+
+    /* Carousel 3 */
+
+    header .carousel-item:nth-of-type(3) .part2 {
+        padding-top: 20px;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 h2 {
+        font-size: 20px;
+        letter-spacing: 1.5px;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 p {
+        font-size: 12px;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 .row {
+        width: 100% !important;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        gap: 8px;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 .row .slider-card {
+        top: 20px;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2:nth-of-type(2) .row .slider-card img {
+        width: 60% !important;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 .row h6 {
+        font-size: 20px;
+    }
+
+    header .carousel.slide .buttons-carousel {
+        position: absolute;
+        right: 30px;
+        bottom: 20px;
+        width: 100px;
+    }
+
+    header .carousel.slide .carousel-control-next, header .carousel.slide .carousel-control-prev {
+        width: 40px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    /* Scroll حجم الشريط بتاع ال */
+    ::-webkit-scrollbar {
+        width: 1px;
+    }
+
+    /* Scroll بتحكم في لونه وشكله  */
+    ::-webkit-scrollbar-thumb {
+        display: none;
+    }
+
+    #header2 .row .col {
+        background: radial-gradient(#2c5364, #203a43, #0f2027);
+        border: 1px solid #fff;
+        padding: 15px 30px;
+    }
+
+    #header2 .row .col .item .img {
+        max-width: 40px;
+        margin: 0 auto;
+    }
+
+
+    #header2 .row .col .item img {
+        width: 100%;
+    }
+
+    /* About */
+
+    #About .container .row .About-content:nth-of-type(1) h3 {
+        font-size: 16px;
+    }
+
+    #About .container .row .About-content:nth-of-type(1)>p {
+        font-size: 12px;
+    }
+
+    #About .container .row .About-content:nth-of-type(1) .row .contact .row .text h5 {
+        font-weight: lighter;
+        padding: 0 16px 0;
+        font-size: 15px;
+    }
+
+    #About .container .row .About-content:nth-of-type(1) .main-btn {
+        padding: 8px 25px;
+        margin: 30px auto 50px 0;
+        font-size: 16px;
+        border-radius: 25px;
+    }
+
+    #About .container .row .About-content:nth-of-type(2) .item .image-about {
+        height: 200px;
+    }
+
+    #About .container .row .About-content:nth-of-type(2) .item .image-about .square .rotate {
+        width: 75px;
+        height: 75px;
+        border: 4px solid var(--main-color);
+    }
+
+    #About .container .row .About-content:nth-of-type(2) .item .image-about h3 {
+        font-size: 22px;
+    }
+
+    /* Testimonials */
+    #Testimonials {
+        height: initial;
+        background-image: url("../images/video_image-min.jpg");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+    }
+
+    #Testimonials video {
+        display: none;
+    }
+
+    #Testimonials .container h2 {
+        font-size: 20px;
+    }
+
+    #Testimonials .container p {
+        width: 100%;
+        font-size: 12px;
+        margin: 0 auto 3rem !important;
+    }
+
+    /* Menu */
+
+    #Menu .nav.nav-pills {
+        overflow: auto;
+    }
+
+    #Menu .nav.nav-pills button.nav-link {
+        padding: 15px 16px;
+    }
+
+    #Menu .nav.nav-pills button.nav-link:after {
+        border: 10px solid transparent;
+        border-bottom-width: 0;
+        border-bottom-color: #fff;
+        top: initial;
+        bottom: 0%;
+        right: initial;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    #Menu .nav.nav-pills button.nav-link.active:after {
+        border-bottom-width: 10px;
+    }
+
+    #Menu .nav.nav-pills button.nav-link:first-child {
+        border-radius: 5px 0 0 5px;
+    }
+
+    #Menu .nav.nav-pills button.nav-link:last-child {
+        border-radius: 0 5px 5px 0;
+    }
 
 
 
+    /* Team  */
+
+    #Team .container .spacial-card .item {
+        position: relative;
+        max-width: 280px;
+        margin: auto;
+    }
+
+    #Team .container .spacial-card .layerOut {
+        width: 90%;
+    }
 
 
+    /* Order */
+    #Order .container .row .form {
+        width: 100%;
+        padding: 20px 25px;
+    }
 
-    /*  */
+    #Order .container .row .form form .main-btn {
+        font-size: 16px;
+    }
 
+    /* footer */
+    footer p {
+        font-size: 13px;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    footer span {
+        color: var(--main-color);
+        font-weight: 700;
+    }
 
 
 
@@ -33,12 +279,615 @@
 
 }
 
-@media (min-width: 371px) and (max-width: 1300px) {}
+@media (min-width: 371px) and (max-width: 1300px) {
 
-@media (min-width: 576px) and (max-width: 1300px) {}
 
-@media (min-width: 768px) and (max-width: 1300px) {}
 
-@media (min-width: 992px) and (max-width: 1300px) {}
 
-@media (min-width: 1181px) and (max-width: 1300px) {}
+
+    /* Carousel 1 */
+
+    header .carousel-item .container .content h1 {
+        font-size: 50px;
+    }
+
+    header .carousel-item .container .content p {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    header .carousel-item.active:nth-of-type(1) .container .content p {
+        transform: scale(1);
+    }
+
+    .main-btn {
+        padding: 8px 25px;
+        margin: 00px auto 0;
+        font-size: 16px;
+    }
+
+    /* Carousel 2 */
+    header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) .img-pizza {
+        transform: scale(0.7);
+    }
+
+    header .carousel-item.active:nth-of-type(2) .container .part:nth-of-type(1) .img-pizza {
+        top: 0%;
+    }
+
+    header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) h2 {
+        font-size: 55px;
+        margin-top: 50px;
+        transform: scale(1.1);
+    }
+
+    header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) .chest p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    /* Carousel 3 */
+
+    header .carousel-item:nth-of-type(3) .part2 {
+        padding-top: 20px;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 h2 {
+        font-size: 25px;
+        letter-spacing: 1.5px;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 p {
+        font-size: 14px;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 .row {
+        width: 100% !important;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        gap: 8px;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 .row .slider-card {
+        top: 20px;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2:nth-of-type(2) .row .slider-card img {
+        width: 50% !important;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 .row h6 {
+        font-size: 20px;
+    }
+
+
+    /* About */
+
+    #About .container .row .About-content:nth-of-type(1) h3 {
+        font-size: 20px;
+    }
+
+    #About .container .row .About-content:nth-of-type(1)>p {
+        font-size: 12px;
+    }
+
+    #About .container .row .About-content:nth-of-type(1) .row .contact .row .text h5 {
+        font-weight: lighter;
+        padding: 0 8px 0;
+        font-size: 18px;
+    }
+
+    #About .container .row .About-content:nth-of-type(1) .main-btn {
+        padding: 8px 25px;
+        margin: 40px auto 50px 0;
+        font-size: 16px;
+        border-radius: 25px;
+    }
+
+    #About .container .row .About-content:nth-of-type(2) .item .image-about {
+        height: 250px;
+    }
+
+    #About .container .row .About-content:nth-of-type(2) .item .image-about .square .rotate {
+        width: 100px;
+        height: 100px;
+        border: 4px solid var(--main-color);
+    }
+
+    #About .container .row .About-content:nth-of-type(2) .item .image-about h3 {
+        font-size: 23px;
+    }
+
+
+
+    /* Order */
+    #Order .container .row .form {
+        width: 400px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 1300px) {
+    .title h4 {
+        font-size: 20px;
+
+    }
+
+    .title h2 {
+        font-size: 35px;
+    }
+
+    .title .title-img {
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .title .title-img img {
+        width: initial;
+    }
+
+    .title .title-img::before,
+    .title .title-img::after {
+        width: 10%;
+        height: 2px;
+    }
+
+    /* Carousel 1 */
+
+    header .carousel-item .container .content h1 {
+        font-size: 60px;
+    }
+
+    header .carousel-item .container .content p {
+        width: 80%;
+        font-size: 14px;
+    }
+
+    header .carousel-item.active:nth-of-type(1) .container .content p {
+        transform: scale(1);
+    }
+
+    /* Carousel 2 */
+    header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) .img-pizza {
+        transform: scale(0.7);
+    }
+
+    header .carousel-item.active:nth-of-type(2) .container .part:nth-of-type(1) .img-pizza {
+        top: 4%;
+    }
+
+    header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) h2 {
+        font-size: 55px;
+        margin-top: 80px;
+        width: 50% !important;
+        transform: scale(1.1);
+    }
+
+    header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) .chest p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) .chest {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    /* Carousel 3 */
+
+    header .carousel-item:nth-of-type(3) .part2 {
+        padding-top: 30px;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 h2 {
+        font-size: 25px;
+        letter-spacing: 1.5px;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 p {
+        font-size: 14px;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 .row {
+        width: 100% !important;
+        margin-top: 40px;
+        margin-bottom: 25px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        gap: 8px;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 .row .slider-card {
+        top: 20px;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2:nth-of-type(2) .row .slider-card img {
+        width: 30% !important;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 .row h6 {
+        font-size: 22px;
+    }
+
+    /* About */
+
+    #About .container .row .About-content:nth-of-type(1) h3 {
+        font-size: 25px;
+    }
+
+    #About .container .row .About-content:nth-of-type(1)>p {
+        font-size: 16px;
+    }
+
+    #About .container .row .About-content:nth-of-type(1) .row .contact .row .text h5 {
+        font-weight: lighter;
+        padding: 0 0px 0;
+        font-size: 18px;
+    }
+
+    #About .container .row .About-content:nth-of-type(2) .item .image-about {
+        height: 300px;
+    }
+
+    #About .container .row .About-content:nth-of-type(2) .item .image-about .square .rotate {
+        width: 100px;
+        height: 100px;
+        border: 4px solid var(--main-color);
+    }
+
+    #About .container .row .About-content:nth-of-type(2) .item .image-about h3 {
+        font-size: 25px;
+    }
+
+    /* Testimonials */
+    #Testimonials .container h2 {
+        font-size: 30px;
+    }
+
+    #Testimonials .container p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /* Menu */
+
+    #Menu .nav.nav-pills {
+        justify-content: center;
+    }
+
+
+    /* footer */
+    footer p {
+        font-size: 15px;
+    }
+
+    footer span {
+        color: var(--main-color);
+        font-weight: 700;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+    /* Carousel 1 */
+
+    header .carousel-item .container .content h1 {
+        font-size: 70px;
+    }
+
+    header .carousel-item .container .content p {
+        width: 60%;
+        font-size: 14px;
+    }
+
+    /* Carousel 2 */
+    header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) .img-pizza {
+        transform: scale(1);
+    }
+
+    header .carousel-item.active:nth-of-type(2) .container .part:nth-of-type(1) .img-pizza {
+        top: 8%;
+    }
+
+    header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) h2 {
+        font-size: 55px;
+        margin-top: 80px;
+        width: 100% !important;
+        transform: scale(1.1);
+    }
+
+    header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) .chest p {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) .chest {
+        width: 100%;
+    }
+
+    /* Carousel 3 */
+
+    header .carousel-item:nth-of-type(3) .part2 {
+        padding: 30px 0 0;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 p {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 .row {
+        width: 90% !important;
+        margin-top: 40px;
+        margin-bottom: 25px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        gap: 8px;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 .row .slider-card {
+        top: 20px;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2:nth-of-type(2) .row .slider-card img {
+        width: 50% !important;
+    }
+
+    header .carousel.slide .buttons-carousel {
+        position: absolute;
+        right: 50px;
+        bottom: 20px;
+        width: 130px;
+    }
+
+    header .carousel.slide .carousel-control-next, header .carousel.slide .carousel-control-prev {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    /* About */
+
+    #About .container .row .About-content:nth-of-type(1) h3 {
+        font-size: 20px;
+    }
+
+    #About .container .row .About-content:nth-of-type(1)>p {
+        font-size: 12px;
+    }
+
+    #About .container .row .About-content:nth-of-type(1) .row .contact .row .text h5 {
+        font-weight: lighter;
+        padding: 0 16px 0;
+        font-size: 16px;
+    }
+
+    #About .container .row .About-content:nth-of-type(2) .item .image-about {
+        height: 250px;
+    }
+
+    #About .container .row .About-content:nth-of-type(2) .item .image-about .square .rotate {
+        width: 100px;
+        height: 100px;
+        border: 4px solid var(--main-color);
+    }
+
+    #About .container .row .About-content:nth-of-type(2) .item .image-about h3 {
+        font-size: 25px;
+    }
+
+    /* Testimonials */
+    #Testimonials .container h2 {
+        font-size: 35px;
+    }
+
+    #Testimonials .container p {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #Testimonials .container .row .Testimonials-card .rows:nth-of-type(3) h4 {
+        font-size: 16px;
+    }
+
+    /* Team */
+
+    #Team .container .spacial-card {
+        padding-inline: 10px;
+    }
+
+    #Team .container .spacial-card .layerOut h4 {
+        font-size: 20px;
+    }
+
+    /* Order */
+    #Order .container .row .form {
+        width: 100%;
+    }
+
+
+    /* footer */
+    footer p {
+        font-size: 16px;
+    }
+
+    footer span {
+        color: var(--main-color);
+        font-weight: 700;
+    }
+
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+
+    /* Carousel 2 */
+    header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) .img-pizza {
+        transform: scale(1);
+    }
+
+    header .carousel-item.active:nth-of-type(2) .container .part:nth-of-type(1) .img-pizza {
+        top: 8%;
+    }
+
+    header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) h2 {
+        font-size: 55px;
+        margin-top: 50px;
+        width: 75% !important;
+        transform: scale(1.1);
+    }
+
+    header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) .chest p {
+        font-size: 14px;
+        width: 70%;
+        margin: 0 auto 10px;
+    }
+
+    header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) .chest {
+        width: 100%;
+    }
+
+    /* Carousel 3 */
+
+    header .carousel-item:nth-of-type(3) .part2 {
+        padding: 30px 0 0;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 p {
+        font-size: 14px;
+        width: 70%;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 .row {
+        width: 75% !important;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2:nth-of-type(2) .row .slider-card img {
+        width: 40% !important;
+    }
+
+    /* About  */
+    #About .container .row .About-content:nth-of-type(1) .row .contact .row .text h5 {
+        font-weight: lighter;
+        padding: 0 15px 0;
+        font-size: 18px;
+    }
+
+    /* Testimonials */
+
+    #Testimonials .container .row .Testimonials-card .rows:nth-of-type(2) span {
+        font-size: 20px;
+    }
+
+    #Testimonials .container .row .Testimonials-card .rows:nth-of-type(3) h4 {
+        font-size: 20px;
+    }
+
+    /* Team */
+
+    #Team .container .spacial-card {
+        padding-inline: 10px;
+    }
+
+    #Team .container .spacial-card .layerOut h4 {
+        font-size: 25px;
+    }
+
+    /* Order */
+    #Order .container .row .form {
+        width: 85%;
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+
+    /* Carousel 2 */
+    header .carousel-item.active:nth-of-type(2) .container .part:nth-of-type(1) .img-pizza {
+        top: 12%;
+    }
+
+    /* Carousel 3 */
+    header .carousel-item:nth-of-type(3) .part2 {
+        padding-top: 90px;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 p {
+        font-size: 14px;
+        width: 65%;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 .row {
+        width: 70% !important;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2 .row .slider-card {
+        top: 20px;
+    }
+
+    header .carousel-item:nth-of-type(3) .part2:nth-of-type(2) .row .slider-card img {
+        width: 40% !important;
+
+    }
+
+    /* About */
+
+    #About .container .row .About-content:nth-of-type(1) .row .contact .row .text h5 {
+        font-weight: lighter;
+        padding: 0 8px 0;
+        font-size: 18px;
+    }
+
+    #About .container .row .About-content:nth-of-type(2) .item .image-about h3 {
+        font-size: 28px;
+    }
+
+    /* Testimonials */
+    #Testimonials .container p {
+        text-align: center;
+    }
+}
+
+@media (min-width: 1299px) and (max-width: 1400px) {
+    header .carousel-item:nth-of-type(3) .part2 {
+        position: relative;
+        padding-top: 00px;
+    }
+
+    /* About */
+
+    #About .container .row .About-content:nth-of-type(1) .row .contact .row .text h5 {
+        padding: 0 5px 0;
+        font-size: 20px;
+    }
+
+    /* Testimonials */
+    #Testimonials .container p {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* Team */
+
+
+    #Team .container .spacial-card {
+        padding-inline: 10px;
+    }
+
+    #Team .container .spacial-card .item {
+        position: relative;
+        max-width: initial;
+        margin: auto;
+    }
+
+    #Team .container .spacial-card .layerOut {
+        width: 90%;
+    }
+}
