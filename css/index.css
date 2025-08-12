@@ -290,6 +290,7 @@ header .carousel-item:nth-of-type(2) .container .part {
 header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) {
     padding-top: 50px;
     position: relative;
+    overflow: hidden;
 }
 
 header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) .img-pizza {
@@ -310,7 +311,7 @@ header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) img {
 
 header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) h2 {
     position: relative;
-    left: -100%;
+    left: -250%;
     font-size: 90px;
     font-weight: 900;
     margin-top: 80px;
@@ -1056,7 +1057,7 @@ header .carousel.slide .carousel-control-next:hover i.carousel-control-next-icon
 }
 
 #Order .container .row .form form input.form-control.padding, #Order .container .row .form form input.form-control.padding {
-    padding: .375rem 2.25rem .375rem 0.5rem;
+    padding: .375rem 1rem .375rem 0.5rem;
 }
 
 #Order .container .row .form form .main-btn {
