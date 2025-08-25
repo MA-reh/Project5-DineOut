@@ -12,6 +12,7 @@ body {
     font-family: "Poppins", sans-serif;
     background: var(--bg-main);
     color: #fff;
+    perspective: 600px;
 }
 
 /* Scroll حجم الشريط بتاع ال */

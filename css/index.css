@@ -53,7 +53,14 @@ header .navbar .offcanvas .offcanvas-body>ul>li>a {
     left: 0;
 }
 
-header .navbar .offcanvas .offcanvas-body>ul>li>a:hover {
+header .navbar .offcanvas .offcanvas-body>ul>li>a span {
+    position: relative;
+    transition-duration: .5s;
+    transition-property: all;
+    left: 0;
+}
+
+header .navbar .offcanvas .offcanvas-body>ul>li>a:hover span {
     color: var(--main-color);
     left: 15px;
     font-weight: 700;
@@ -273,6 +280,10 @@ header .carousel-item.active:nth-of-type(1) .container .content .main-btn {
 
 /* Carousel 2 */
 
+header .carousel-item:nth-of-type(2) {
+    overflow: hidden;
+}
+
 header .carousel-item:nth-of-type(2) .container {
     display: flex;
     justify-content: center;
@@ -290,7 +301,6 @@ header .carousel-item:nth-of-type(2) .container .part {
 header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) {
     padding-top: 50px;
     position: relative;
-    overflow: hidden;
 }
 
 header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) .img-pizza {
@@ -311,7 +321,7 @@ header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) img {
 
 header .carousel-item:nth-of-type(2) .container .part:nth-of-type(1) h2 {
     position: relative;
-    left: -250%;
+    left: -500%;
     font-size: 90px;
     font-weight: 900;
     margin-top: 80px;
@@ -955,6 +965,10 @@ header .carousel.slide .carousel-control-next:hover i.carousel-control-next-icon
     left: -64%;
     opacity: 0;
     z-index: 1;
+}
+
+#Menu .tab-content .tab-pane .item .body p sup {
+    color: var(--main-color);
 }
 
 /* Team */
